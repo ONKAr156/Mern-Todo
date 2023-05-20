@@ -1,0 +1,13 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "env": "^0.0.2",
+    "express": "^4.18.2",
+    "mongoose": "^7.1.2"
+  }
+}
