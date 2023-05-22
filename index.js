@@ -7,6 +7,7 @@ mongoose.connect(process.env.MONGO_url)
 const app = express()
 app.use(express.json())    // front end data to json
 app.use(cors())   
+app.use(express.static("Public"))
 
 app.post("/Api/todo/add",addTodo)
 app.get("/Api/todo",getTodo)
