@@ -8,10 +8,10 @@ const app = express()
 app.use(express.json())    // front end data to json
 app.use(cors())   
 
-app.post("/todo/add",addTodo)
-app.get("/todo",getTodo)
-app.put("/todo/:id",updateTodo)
-app.delete("/todo/:id",deleteTodo)
+app.post("/Api/todo/add",addTodo)
+app.get("/Api/todo",getTodo)
+app.put("/Api/todo/:id",updateTodo)
+app.delete("/Api/todo/:id",deleteTodo)
 
 mongoose.connection.once("open",()=>{
     console.log("db connected");
